@@ -1,0 +1,23 @@
+/**index.wxss**/
+page {
+  height: 100%;
+}
+swiper {
+  height: 100%;
+}
+swiper-item {
+  position: relative;
+}
+image {
+  width: 100%;
+  height: 100%;
+}
+button {
+  width: 400rpx;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: 40rpx;
+  background: rgba(255,255,255,0.5);
+}

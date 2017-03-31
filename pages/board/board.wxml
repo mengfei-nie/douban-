@@ -1,0 +1,23 @@
+<!--pages/board/board.wxml-->
+<import src="../template/template.wxml" />
+<scroll-view class="board-container" scroll-y="true">
+    <view>
+    <swiper class="slide" indicator-dots="true"  indicator-color="rgba(255,255,255,0.8)" indicator-active-color="#00ff00">
+        <block wx:for="{{loadingData.subjects}}">
+            <swiper-item>
+                <image class="slide-image" src="{{item.images.large}}"></image>
+            </swiper-item>
+        </block>
+    </swiper>
+</view>
+<view>
+    <template is="movie-list" data="{{...loadingData}}"></template>
+
+    <template is="movie-list" data="{{...futureData}}"></template>
+
+    <template is="movie-list" data="{{...topData}}"></template>
+</view>
+
+
+</scroll-view>
+

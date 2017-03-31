@@ -1,0 +1,18 @@
+<template name="movie-list">
+    <view class="common-list">
+        <navigator class="title" url="url">
+            <text>{{title}}</text>
+        </navigator>
+
+        <scroll-view scroll-x="true" class="scroll-container">
+            <view class="flex">
+                <navigator url="../details/details"  wx:for="{{subjects}}">
+                    <view class="list-item">
+                        <image class="item-image" src="{{item.images.small}}"></image>
+                        <text>{{item.title}}</text>
+                    </view>
+                </navigator>
+            </view>
+        </scroll-view>
+    </view>
+</template>
