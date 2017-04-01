@@ -1,4 +1,4 @@
-.common-list {
+.common-board {
     margin-top: 40rpx;
     width: 100%;
     height: 380rpx;
@@ -6,7 +6,16 @@
     display: flex;
     flex-direction: column;
 }
-
+.scroll-container {
+    /*height: 100%;*/
+}
+.title image {
+    width: 12px;
+    height: 12px;
+    float: right;
+    margin-top: 12rpx;
+    margin-right: 10rpx;
+}
 text {
     padding-left: 10rpx;
     font-size: 12px;
@@ -28,14 +37,14 @@ text {
     box-sizing: border-box;
 }
 
-.list-item {
+.board-item {
     width: 100%;
     /*height: 250rpx;*/
     display: flex;
     flex-direction: column;
     text-align: center;
 }
-.list-item text{
+.board-item text{
     padding-top: 6px;
     padding-bottom: 6px;
     width: 100%;
@@ -46,4 +55,70 @@ text {
 .item-image {
     width: 160rpx;
     height: 250rpx;
+}
+
+/*详情*/
+.fix {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1000;
+}
+.common-details {
+    width: 100%;
+    height: 100%;
+    padding:60rpx 80rpx 40rpx 80rpx;
+    box-sizing: border-box;
+    background: #f9f9f9;
+    opacity: 0.9;
+}
+.details-header {
+    width: 100%;
+    height: 800rpx;
+    display: flex;
+    flex-direction: column;
+}
+.details-header image {
+    width: 100%;
+    height: 680rpx;
+}
+.details-header text {
+    padding-top: 5px;
+    text-align: center;
+}
+.list-item {
+    width: 100%;
+    height: 180rpx;
+    border-bottom: 1px solid #f9f9f9;
+    padding: 10rpx 20rpx;
+    box-sizing: border-box;
+    /*display: flex;
+    flex-direction: row;*/
+}
+.list-item image {
+    float: left;
+    width: 100rpx;
+    height: 140rpx;
+}
+.list-info {
+    padding-left: 10rpx;
+}
+.list-info .title-header {
+    font-size: 14px;
+}
+.list-info text {
+    font-size: 12px;
+}
+.rater {
+    width: 50rpx;
+    height: 40rpx;
+    text-align: center;
+    line-height: 40rpx;
+    color: #fff;
+    border-radius: 10rpx;
+    background: #f00;
+    float: right;
+    margin-top:  -110rpx;
 }

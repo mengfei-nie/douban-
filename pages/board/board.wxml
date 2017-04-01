@@ -11,11 +11,11 @@
     </swiper>
 </view>
 <view>
-    <template is="movie-list" data="{{...loadingData}}"></template>
+    <template is="movie-board" data="{{...loadingData}}"></template>
 
-    <template is="movie-list" data="{{...futureData}}"></template>
+    <template is="movie-board" data="{{...futureData}}"></template>
 
-    <template is="movie-list" data="{{...topData}}"></template>
+    <template is="movie-board" data="{{...topData}}"></template>
 </view>
 
 

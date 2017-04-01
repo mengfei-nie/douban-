@@ -1,13 +1,14 @@
-<template name="movie-list">
-    <view class="common-list">
-        <navigator class="title" url="url">
+<template name="movie-board">
+    <view class="common-board">
+        <navigator class="title" url="../list/list?title={{title}}">
             <text>{{title}}</text>
+            <image src="../../images/arrowright.png"></image>
         </navigator>
 
         <scroll-view scroll-x="true" class="scroll-container">
             <view class="flex">
-                <navigator url="../details/details"  wx:for="{{subjects}}">
-                    <view class="list-item">
+                <navigator url="../details/details?title={{item.title}}&id={{item.id}}"  wx:for="{{subjects}}">
+                    <view class="board-item">
                         <image class="item-image" src="{{item.images.small}}"></image>
                         <text>{{item.title}}</text>
                     </view>
@@ -15,4 +16,48 @@
             </view>
         </scroll-view>
     </view>
+</template>
+
+<template name="movie-details">
+    <image class="fix" src="{{images.large}}"></image>
+    <view class="common-details">
+        <view class="details-header">
+            <image src="{{images.large}}"></image>
+            <text>{{original_title}}({{year}})</text>
+        </view>
+        <view class="details-content">
+            <view class="classname">
+                <text>评分：{{rating.max}}</text>
+            </view>
+            <view class="classname">
+                <text>导演：</text><text wx:for="{{directors}}">{{item.name}}</text>
+            </view>
+            <view class="classname">
+                <text>主演：</text><text wx:for="{{casts}}">{{item.name}}</text>
+            </view>
+            <text></text>
+        </view>
+        <view class="details-footer">
+            <text style="display:block;">摘要:</text>
+            <text>{{summary}}</text>
+        </view>
+    </view>
+</template>
+
+<template name="movie-list">
+    <scroll-view class="common-list">
+        <view class="list-item" wx:for="{{subjects}}">
+            <image class="list-image" src="{{item.images.small}}"></image>
+            <view class="list-info">
+                <text class="title-header">{{item.title}}</text>
+                <view class="classname">
+                    <text>{{item.original_title}}({{item.year}})</text>
+                </view>
+                <view class="classname">
+                    <text>导演：</text><text wx:for="{{item.directors}}">{{item.name}}</text>
+                </view>
+            </view>
+            <text class="rater">{{item.rating.average}}</text>
+        </view>
+    </scroll-view>
 </template>

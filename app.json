@@ -2,10 +2,10 @@
   "pages":[
     "pages/index/index",
     "pages/board/board",
-    "pages/home/home",
+    "pages/list/list",
+    "pages/details/details",
     "pages/search/search",
-    "pages/profile/profile",
-    "pages/details/details"
+    "pages/profile/profile"
   ],
   "window":{
     "backgroundTextStyle":"light",
