@@ -1,11 +1,12 @@
 {
   "pages":[
+    "pages/canvans/canvans",    
+    "pages/profile/profile",
     "pages/index/index",
     "pages/board/board",
     "pages/list/list",
     "pages/details/details",
-    "pages/search/search",
-    "pages/profile/profile"
+    "pages/search/search"
   ],
   "window":{
     "backgroundTextStyle":"light",

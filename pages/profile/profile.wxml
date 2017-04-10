@@ -1,2 +1,18 @@
 <!--pages/profile/profile.wxml-->
-<text>pages/profile/profile.wxml</text>
+<!--<view class="title">
+    <view class="classname">
+        <text>我的信息</text>
+    </view>
+    <image bindtap="tap" src="{{image_src}}"></image>
+</view>-->
+
+<map id="myMap" show-location />
+
+<button type="primary" bindtap="getCenterLocation">获取位置</button>
+<button type="primary" bindtap="moveToLocation">移动位置</button>
+<button type="primary" bindtap="scanTap">扫码</button>
+<button type="default" bindtap="makePhone">拨打电话</button>
+<button type="default" bindtap="showAction">菜单</button>
+<button type="default" bindtap="showModal">Modal</button>
+<button type="default" bindtap="showLoading">loading</button>
+

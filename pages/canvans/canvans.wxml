@@ -1,0 +1,4 @@
+<!--pages/canvans/canvans.wxml-->
+<canvas canvas-id="myCanvans" style="border:1px solid pink;" />
+
+<view animation="{{animationData}}" style="background:red;height:100rpx;width:100rpx"></view>

@@ -1,1 +1,9 @@
 /* pages/profile/profile.wxss */
+.title {
+    text-align: center;
+}
+
+image {
+    width: 250px;
+    height: 250px;
+}
